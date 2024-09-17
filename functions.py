@@ -1,4 +1,4 @@
-import time as tm
+import time
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 
@@ -25,9 +25,9 @@ def collect_product_info(driver, url=''):
 
     driver.switch_to.new_window('tab')
 
-    tm.sleep(3)
+    time.sleep(3)
     driver.get(url=url)
-    tm.sleep(3)
+    time.sleep(3)
 
     # product_id
     product_id = driver.find_element(
