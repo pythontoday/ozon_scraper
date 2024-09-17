@@ -1,3 +1,4 @@
 bs4==0.0.2
 lxml==5.3.0
 undetected-chromedriver==3.5.5
+setuptools
