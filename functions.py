@@ -39,7 +39,7 @@ def collect_product_info(driver, url=''):
     page_source = str(driver.page_source)
     soup = BeautifulSoup(page_source, 'lxml')
 
-    with open(f'product_{product_id}.html', 'w') as file:
+    with open(f'product_{product_id}.html', 'w', encoding="utf-8") as file:
         file.write(page_source)
 
     product_name = soup.find('div', attrs={"data-widget": 'webProductHeading'}).find(
